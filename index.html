@@ -8,6 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- AOS for Scroll Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/globe.svg" />
   
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
@@ -32,12 +33,13 @@
   <!-- Navbar -->
   <nav class="fixed w-full z-50 transition-all duration-300 py-4 bg-black/20 backdrop-blur-md">
     <div class="max-w-[1400px] mx-auto px-4 md:px-16 flex items-center justify-between">
-      <a href="#" class="text-white font-display text-2xl font-semibold tracking-tight">Maplescape</a>
-      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white/90">
-        <a href="#about" class="hover:text-[#BBD885] transition-colors">About</a>
-        <a href="#services" class="hover:text-[#BBD885] transition-colors">Services</a>
-        <a href="#portfolio" class="hover:text-[#BBD885] transition-colors">Portfolio</a>
-        <a href="https://wa.me/14378552790" class="px-5 py-2 bg-[#BBD885] text-[#1E2B1F] rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#A5C768] transition-colors">Contact Us</a>
+      <a href="index.html" class="text-white font-display text-2xl font-semibold tracking-tight">Maplescape</a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium text-white/90">
+        <a href="index.html" class="hover:text-[#BBD885] transition-colors">Home</a>
+        <a href="src/pages/about.html" class="hover:text-[#BBD885] transition-colors">About</a>
+        <a href="src/pages/contact.html" class="hover:text-[#BBD885] transition-colors">Contact</a>
+        <a href="src/pages/signin.html" class="hover:text-[#BBD885] transition-colors">Sign In</a>
+        <a href="src/pages/signup.html" class="px-5 py-2 bg-[#BBD885] text-[#1E2B1F] rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#A5C768] transition-colors">Sign Up</a>
       </div>
     </div>
   </nav>
@@ -46,7 +48,7 @@
   <section id="home" class="relative w-full h-[85vh] min-h-[600px] flex flex-col justify-center overflow-hidden bg-[#FDFBF7]">
     <!-- Background -->
     <div class="absolute inset-0 z-0">
-      <img src="public/hero-bg.png" alt="Maplescape Landscape Design" class="w-full h-full object-cover" />
+      <img src="assets/hero-bg.png" alt="Maplescape Landscape Design" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-[#1E2B1F]/70"></div>
     </div>
 
@@ -101,7 +103,7 @@
     <div class="max-w-[1400px] mx-auto px-4 md:px-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
       
       <div class="w-full lg:w-[35%] aspect-[3/4] rounded-[30px] overflow-hidden shadow-lg" data-aos="fade-right">
-        <img src="public/images/generated/about.png" alt="About Maplescape" class="w-full h-full object-cover" />
+        <img src="assets/images/generated/about.png" alt="About Maplescape" class="w-full h-full object-cover" />
       </div>
 
       <div class="w-full lg:w-[35%]" data-aos="fade-up">
@@ -143,7 +145,7 @@
         <!-- Service 1 -->
         <div class="group flex flex-col" data-aos="fade-up" data-aos-delay="0">
           <div class="w-full aspect-[4/3] rounded-[30px] overflow-hidden mb-6 shadow-md">
-            <img src="public/images/portfolio-real-1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Design" />
+            <img src="assets/images/portfolio-real-1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Design" />
           </div>
           <h3 class="font-display font-semibold text-2xl mb-2">Landscape Design</h3>
           <p class="text-[#1E2B1F]/70 text-sm mb-4 flex-grow">Custom designs that combine beauty, functionality and sustainability.</p>
@@ -151,7 +153,7 @@
         <!-- Service 2 -->
         <div class="group flex flex-col" data-aos="fade-up" data-aos-delay="100">
           <div class="w-full aspect-[4/3] rounded-[30px] overflow-hidden mb-6 shadow-md">
-            <img src="public/images/portfolio-real-2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Construction" />
+            <img src="assets/images/portfolio-real-2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Construction" />
           </div>
           <h3 class="font-display font-semibold text-2xl mb-2">Construction</h3>
           <p class="text-[#1E2B1F]/70 text-sm mb-4 flex-grow">Expert craftsmanship to bring your landscape design to life with precision.</p>
@@ -159,7 +161,7 @@
         <!-- Service 3 -->
         <div class="group flex flex-col" data-aos="fade-up" data-aos-delay="200">
           <div class="w-full aspect-[4/3] rounded-[30px] overflow-hidden mb-6 shadow-md">
-            <img src="public/images/portfolio-real-3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Decking" />
+            <img src="assets/images/portfolio-real-3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Decking" />
           </div>
           <h3 class="font-display font-semibold text-2xl mb-2">Decking</h3>
           <p class="text-[#1E2B1F]/70 text-sm mb-4 flex-grow">Custom-built decks that create a durable, beautiful space to relax.</p>
@@ -167,7 +169,7 @@
         <!-- Service 4 -->
         <div class="group flex flex-col" data-aos="fade-up" data-aos-delay="300">
           <div class="w-full aspect-[4/3] rounded-[30px] overflow-hidden mb-6 shadow-md">
-            <img src="public/images/service-maintenance.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Maintenance" />
+            <img src="assets/images/service-maintenance.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Maintenance" />
           </div>
           <h3 class="font-display font-semibold text-2xl mb-2">Maintenance</h3>
           <p class="text-[#1E2B1F]/70 text-sm mb-4 flex-grow">Keep your landscape healthy and looking its best all year round.</p>
