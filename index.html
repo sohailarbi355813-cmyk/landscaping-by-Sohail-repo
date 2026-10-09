@@ -30,9 +30,9 @@
 </head>
 <body class="text-[#1E2B1F] antialiased">
 
-  <!-- Navbar -->
-  <nav class="fixed w-full z-50 transition-all duration-300 py-4 bg-black/20 backdrop-blur-md">
-    <div class="max-w-[1400px] mx-auto px-4 md:px-16 flex items-center justify-between">
+  <!-- Header & Nav -->
+  <header class="fixed w-full z-50 transition-all duration-300 py-4 bg-black/20 backdrop-blur-md">
+    <nav class="max-w-[1400px] mx-auto px-4 md:px-16 flex items-center justify-between">
       <a href="index.html" class="text-white font-display text-2xl font-semibold tracking-tight">Maplescape</a>
       <div class="hidden md:flex items-center gap-6 text-sm font-medium text-white/90">
         <a href="index.html" class="hover:text-[#BBD885] transition-colors">Home</a>
@@ -41,9 +41,11 @@
         <a href="src/pages/signin.html" class="hover:text-[#BBD885] transition-colors">Sign In</a>
         <a href="src/pages/signup.html" class="px-5 py-2 bg-[#BBD885] text-[#1E2B1F] rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#A5C768] transition-colors">Sign Up</a>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
+  <!-- Main Content -->
+  <main>
   <!-- Hero Section -->
   <section id="home" class="relative w-full h-[85vh] min-h-[600px] flex flex-col justify-center overflow-hidden bg-[#FDFBF7]">
     <!-- Background -->
@@ -167,9 +169,10 @@
   <section id="about" class="py-16 md:py-24 bg-transparent">
     <div class="max-w-[1400px] mx-auto px-4 md:px-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
       
-      <div class="w-full lg:w-[35%] aspect-[3/4] rounded-[30px] overflow-hidden shadow-lg" data-aos="fade-right">
+      <figure class="w-full lg:w-[35%] aspect-[3/4] rounded-[30px] overflow-hidden shadow-lg m-0" data-aos="fade-right">
         <img src="assets/images/generated/about.png" alt="About Maplescape" class="w-full h-full object-cover" />
-      </div>
+        <figcaption class="sr-only">Maplescape Landscaping beautiful garden design</figcaption>
+      </figure>
 
       <div class="w-full lg:w-[35%]" data-aos="fade-up">
         <span class="text-xs uppercase tracking-widest font-bold text-[#BBD885] mb-2 block">About Maplescape</span>
@@ -324,6 +327,7 @@
       </svg>
     </div>
   </div>
+  </main>
 
   <!-- Footer -->
   <footer class="bg-[#1E2B1F] text-white py-16">
