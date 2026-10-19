@@ -30,8 +30,12 @@
 </head>
 <body class="text-[#1E2B1F] antialiased">
 
-  <!-- Header & Nav -->
+  <!-- ======================================================== -->
+  <!-- [SEMANTIC TAG: <header>] - Website Header & Branding Area -->
+  <!-- ======================================================== -->
   <header class="fixed w-full z-50 transition-all duration-300 py-4 bg-black/20 backdrop-blur-md">
+
+    <!-- [SEMANTIC TAG: <nav>] - Primary Navigation Menu -->
     <nav class="max-w-[1400px] mx-auto px-4 md:px-16 flex items-center justify-between">
       <a href="index.html" class="text-white font-display text-2xl font-semibold tracking-tight">Maplescape</a>
       <div class="hidden md:flex items-center gap-6 text-sm font-medium text-white/90">
@@ -65,10 +69,13 @@
     </div>
   </header>
 
-  <!-- Main Content -->
+  <!-- ======================================================== -->
+  <!-- [SEMANTIC TAG: <main>] - Primary Core Content of the Page -->
+  <!-- ======================================================== -->
   <main>
-  <!-- Hero Section -->
-  <section id="home" class="relative w-full h-[85vh] min-h-[600px] flex flex-col justify-center overflow-hidden bg-[#FDFBF7]">
+
+    <!-- [SEMANTIC TAG: <section>] - Hero Banner Section (#home) -->
+    <section id="home" class="relative w-full h-[85vh] min-h-[600px] flex flex-col justify-center overflow-hidden bg-[#FDFBF7]">
     <!-- Background -->
     <div class="absolute inset-0 z-0">
       <img src="assets/hero-bg.png" alt="Maplescape Landscape Design" class="w-full h-full object-cover" />
@@ -119,8 +126,8 @@
     </div>
   </section>
 
-  <!-- Stats Bar -->
-  <section class="w-full bg-[#FDFBF7] border-b border-[#1E2B1F]/10">
+    <!-- [SEMANTIC TAG: <section>] - Stats & Trust Indicators Section -->
+    <section class="w-full bg-[#FDFBF7] border-b border-[#1E2B1F]/10">
     <div class="max-w-[1400px] mx-auto px-4 md:px-16 py-6 md:py-8">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-[#1E2B1F]/10" data-aos="fade-up">
         
@@ -186,14 +193,15 @@
     <!-- Content Container -->
     <div class="relative z-10">
 
-  <!-- About Section -->
-  <section id="about" class="py-16 md:py-24 bg-transparent">
-    <div class="max-w-[1400px] mx-auto px-4 md:px-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-      
-      <figure class="w-full lg:w-[35%] aspect-[3/4] rounded-[30px] overflow-hidden shadow-lg m-0" data-aos="fade-right">
-        <img src="assets/images/generated/about.png" alt="About Maplescape" class="w-full h-full object-cover" />
-        <figcaption class="sr-only">Maplescape Landscaping beautiful garden design</figcaption>
-      </figure>
+    <!-- [SEMANTIC TAG: <section>] - About Us Section (#about) -->
+    <section id="about" class="py-16 md:py-24 bg-transparent">
+      <div class="max-w-[1400px] mx-auto px-4 md:px-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        
+        <!-- [SEMANTIC TAG: <figure> & <figcaption>] - Self-contained Media Image with Caption -->
+        <figure class="w-full lg:w-[35%] aspect-[3/4] rounded-[30px] overflow-hidden shadow-lg m-0" data-aos="fade-right">
+          <img src="assets/images/generated/about.png" alt="About Maplescape" class="w-full h-full object-cover" />
+          <figcaption class="sr-only">Maplescape Landscaping beautiful garden design</figcaption>
+        </figure>
 
       <div class="w-full lg:w-[35%]" data-aos="fade-up">
         <span class="text-xs uppercase tracking-widest font-bold text-[#BBD885] mb-2 block">About Maplescape</span>
@@ -221,8 +229,8 @@
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-16 md:py-24 bg-transparent">
+    <!-- [SEMANTIC TAG: <section>] - Services Section (#services) -->
+    <section id="services" class="py-16 md:py-24 bg-transparent">
     <div class="max-w-[1400px] mx-auto px-4 md:px-16">
       <div class="mb-16" data-aos="fade-up">
         <span class="text-xs uppercase tracking-widest font-bold text-[#BBD885] mb-2 block">Our Services</span>
@@ -347,10 +355,12 @@
         <path d="M0,120 L1440,120 L1440,70 C1080,130 720,10 360,70 C180,100 90,90 0,70 Z" />
       </svg>
     </div>
-  </div>
+  <!-- [END OF SEMANTIC TAG: </main>] -->
   </main>
 
-  <!-- Footer -->
+  <!-- ======================================================== -->
+  <!-- [SEMANTIC TAG: <footer>] - Website Footer & Contact Info  -->
+  <!-- ======================================================== -->
   <footer class="bg-[#1E2B1F] text-white py-16">
     <div class="max-w-[1400px] mx-auto px-4 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-12">
       <div>
