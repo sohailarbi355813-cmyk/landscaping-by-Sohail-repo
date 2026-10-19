@@ -16,9 +16,9 @@
 </head>
 <body class="text-[#1E2B1F] antialiased flex flex-col min-h-screen">
 
-  <!-- Navbar -->
-  <nav class="w-full z-50 transition-all duration-300 py-4 bg-[#1E2B1F] text-white shadow-sm">
-    <div class="max-w-[1400px] mx-auto px-4 md:px-16 flex items-center justify-between">
+  <!-- Header & Nav -->
+  <header class="w-full z-50 transition-all duration-300 bg-[#1E2B1F] text-white shadow-sm">
+    <nav class="max-w-[1400px] mx-auto px-4 md:px-16 py-4 flex items-center justify-between">
       <a href="../../index.html" class="font-display text-2xl font-semibold tracking-tight">Maplescape</a>
       <div class="hidden md:flex items-center gap-6 text-sm font-medium">
         <a href="../../index.html" class="hover:text-[#BBD885] transition-colors">Home</a>
@@ -27,8 +27,29 @@
         <a href="signin.html" class="text-[#BBD885]">Sign In</a>
         <a href="signup.html" class="px-5 py-2 bg-[#BBD885] text-[#1E2B1F] rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#A5C768] transition-colors">Sign Up</a>
       </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="menu-btn" class="md:hidden text-white hover:text-[#BBD885] focus:outline-none p-1 transition-colors" aria-label="Toggle navigation menu">
+        <svg id="menu-icon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg id="close-icon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1E2B1F] border-t border-white/10 px-6 py-6 shadow-2xl">
+      <div class="flex flex-col gap-4 text-base font-medium text-white/90">
+        <a href="../../index.html" class="hover:text-[#BBD885] transition-colors py-2 border-b border-white/5">Home</a>
+        <a href="about.html" class="hover:text-[#BBD885] transition-colors py-2 border-b border-white/5">About</a>
+        <a href="contact.html" class="hover:text-[#BBD885] transition-colors py-2 border-b border-white/5">Contact</a>
+        <a href="signin.html" class="text-[#BBD885] transition-colors py-2 border-b border-white/5">Sign In</a>
+        <a href="signup.html" class="text-center px-5 py-3 bg-[#BBD885] text-[#1E2B1F] rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#A5C768] transition-colors mt-2 shadow-md">Sign Up</a>
+      </div>
     </div>
-  </nav>
+  </header>
 
   <main class="flex-grow flex items-center justify-center py-12 px-4">
     <div class="max-w-md w-full bg-white p-8 md:p-10 rounded-[30px] shadow-xl border border-gray-100">
@@ -80,5 +101,22 @@
     </div>
   </footer>
 
+  <script>
+    // Mobile Hamburger Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        if (menuIcon && closeIcon) {
+          menuIcon.classList.toggle('hidden');
+          closeIcon.classList.toggle('hidden');
+        }
+      });
+    }
+  </script>
 </body>
 </html>
