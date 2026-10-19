@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Maplescape</title>
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- AOS for Scroll Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="../../assets/globe.svg" />
   
@@ -34,7 +32,6 @@
         <a href="signup.html" class="px-5 py-2 bg-[#BBD885] text-[#1E2B1F] rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#A5C768] transition-colors">Sign Up</a>
       </div>
 
-      <!-- Mobile Hamburger Button -->
       <button id="menu-btn" class="md:hidden text-white hover:text-[#BBD885] focus:outline-none p-1 transition-colors" aria-label="Toggle navigation menu">
         <svg id="menu-icon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -45,7 +42,6 @@
       </button>
     </nav>
 
-    <!-- Mobile Menu Dropdown -->
     <div id="mobile-menu" class="hidden md:hidden bg-[#1E2B1F] border-t border-white/10 px-6 py-6 shadow-2xl">
       <div class="flex flex-col gap-4 text-base font-medium text-white/90">
         <a href="../../index.html" class="hover:text-[#BBD885] transition-colors py-2 border-b border-white/5">Home</a>
@@ -57,7 +53,6 @@
     </div>
   </header>
 
-  <!-- Contact Banner -->
   <div class="w-full bg-[#1E2B1F]/5 py-20 text-center">
     <h1 class="font-display text-5xl font-medium mb-4">Get in Touch</h1>
     <p class="text-sm uppercase tracking-widest text-[#BBD885] font-bold">We'd love to hear from you</p>
@@ -68,10 +63,8 @@
   <!-- ======================================================== -->
   <main class="flex-grow">
     
-    <!-- Surface Wrapper (Gradient + Leaves) -->
     <div class="relative w-full bg-gradient-to-b from-[#FDFBF7] via-[#E2F0C8] to-[#BBD885] overflow-hidden">
       
-      <!-- Decorative Side Leaves -->
       <div class="absolute top-[10%] left-0 opacity-20 pointer-events-none">
         <svg width="120" height="200" viewBox="0 0 100 200" fill="#9CBF62">
           <path d="M0 50 C40 40 80 80 50 150 C20 120 0 90 0 50 Z" />
@@ -83,61 +76,59 @@
         </svg>
       </div>
 
-      <!-- Content Container -->
       <div class="relative z-10">
 
         <!-- [SEMANTIC TAG: <section>] - Contact Form Section -->
         <section class="py-16 md:py-24 bg-transparent">
-      <div class="max-w-3xl mx-auto px-4 md:px-8">
-        
-        <div class="bg-white p-8 md:p-12 rounded-[30px] shadow-xl border border-gray-100" data-aos="fade-up">
-          <h2 class="font-display text-3xl font-medium mb-6 text-center">Send us a Message</h2>
-          
-          <!-- [SEMANTIC TAG: <form>] - Interactive Contact Form -->
-          <form action="https://formsubmit.co/sohailarbi355813@gmail.com" method="POST" class="space-y-6">
+          <div class="max-w-3xl mx-auto px-4 md:px-8">
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
-                <input type="text" id="name" name="name" required
-                       class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#BBD885] transition-shadow">
-              </div>
-              <div>
-                <label for="email" class="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
-                <input type="email" id="email" name="email" required
-                       class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#BBD885] transition-shadow">
-              </div>
+            <div class="bg-white p-8 md:p-12 rounded-[30px] shadow-xl border border-gray-100" data-aos="fade-up">
+              <h2 class="font-display text-3xl font-medium mb-6 text-center">Send us a Message</h2>
+              
+              <!-- [SEMANTIC TAG: <form>] - Interactive Contact Form -->
+              <form action="https://formsubmit.co/sohailarbi355813@gmail.com" method="POST" class="space-y-6">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                    <input type="text" id="name" name="name" required
+                           class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#BBD885] transition-shadow">
+                  </div>
+                  <div>
+                    <label for="email" class="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" required
+                           class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#BBD885] transition-shadow">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="subject" class="block text-sm font-bold text-gray-700 mb-2">Subject</label>
+                  <select id="subject" name="subject" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#BBD885] transition-shadow bg-white">
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Landscape Design">Landscape Design</option>
+                    <option value="Maintenance">Maintenance</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="message" class="block text-sm font-bold text-gray-700 mb-2">Message</label>
+                  <textarea id="message" name="message" rows="5" required
+                            class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#BBD885] transition-shadow resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-4 bg-[#1E2B1F] text-white rounded-xl font-bold uppercase tracking-widest text-sm hover:bg-[#BBD885] hover:text-[#1E2B1F] transition-colors duration-300">
+                  Submit Message
+                </button>
+                
+              </form>
+              
             </div>
 
-            <div>
-              <label for="subject" class="block text-sm font-bold text-gray-700 mb-2">Subject</label>
-              <select id="subject" name="subject" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#BBD885] transition-shadow bg-white">
-                <option value="General Inquiry">General Inquiry</option>
-                <option value="Landscape Design">Landscape Design</option>
-                <option value="Maintenance">Maintenance</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="message" class="block text-sm font-bold text-gray-700 mb-2">Message</label>
-              <textarea id="message" name="message" rows="5" required
-                        class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#BBD885] transition-shadow resize-none"></textarea>
-            </div>
-
-            <button type="submit" class="w-full py-4 bg-[#1E2B1F] text-white rounded-xl font-bold uppercase tracking-widest text-sm hover:bg-[#BBD885] hover:text-[#1E2B1F] transition-colors duration-300">
-              Submit Message
-            </button>
-            
-          </form>
-          
-        </div>
-
-      </div>
-    </section>
+          </div>
+        </section>
 
       </div>
       
-      <!-- Smooth Wave Divider at the very bottom -->
       <div class="absolute bottom-0 left-0 w-full z-20 translate-y-[1px]">
         <svg viewBox="0 0 1440 120" preserveAspectRatio="none" class="w-full h-12 md:h-24" fill="#1E2B1F">
           <path d="M0,120 L1440,120 L1440,70 C1080,130 720,10 360,70 C180,100 90,90 0,70 Z" />
@@ -179,7 +170,6 @@
   <script>
     AOS.init({ once: true, offset: 100 });
 
-    // Mobile Hamburger Menu Toggle
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const menuIcon = document.getElementById('menu-icon');

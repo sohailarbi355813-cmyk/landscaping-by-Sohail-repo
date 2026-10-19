@@ -4,25 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maplescape Landscaping</title>
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- AOS for Scroll Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="assets/globe.svg" />
   
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
-    
     body {
       font-family: 'Inter', sans-serif;
       background-color: #FDFBF7;
     }
-    
     .font-display {
       font-family: 'Playfair Display', serif;
     }
-    
-    /* Smooth Scrolling */
     html {
       scroll-behavior: smooth;
     }
@@ -46,7 +40,6 @@
         <a href="src/pages/signup.html" class="px-5 py-2 bg-[#BBD885] text-[#1E2B1F] rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[#A5C768] transition-colors">Sign Up</a>
       </div>
 
-      <!-- Mobile Hamburger Button -->
       <button id="menu-btn" class="md:hidden text-white hover:text-[#BBD885] focus:outline-none p-1 transition-colors" aria-label="Toggle navigation menu">
         <svg id="menu-icon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -57,7 +50,6 @@
       </button>
     </nav>
 
-    <!-- Mobile Menu Dropdown -->
     <div id="mobile-menu" class="hidden md:hidden bg-[#1E2B1F]/95 backdrop-blur-xl border-t border-white/10 mt-4 px-6 py-6 shadow-2xl transition-all duration-300">
       <div class="flex flex-col gap-4 text-base font-medium text-white/90">
         <a href="index.html" class="hover:text-[#BBD885] transition-colors py-2 border-b border-white/5">Home</a>
@@ -76,285 +68,278 @@
 
     <!-- [SEMANTIC TAG: <section>] - Hero Banner Section (#home) -->
     <section id="home" class="relative w-full h-[85vh] min-h-[600px] flex flex-col justify-center overflow-hidden bg-[#FDFBF7]">
-    <!-- Background -->
-    <div class="absolute inset-0 z-0">
-      <img src="assets/hero-bg.png" alt="Maplescape Landscape Design" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-[#1E2B1F]/70"></div>
-      <!-- Radial light glows -->
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(187,216,133,0.25),transparent_60%)]"></div>
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(74,103,65,0.5),transparent_60%)]"></div>
-      <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/20 z-0"></div>
-    </div>
-
-    <!-- Content -->
-    <div class="relative z-10 w-full max-w-[1400px] mx-auto px-4 md:px-16 pt-20 md:pt-0">
-      <div class="max-w-2xl" data-aos="fade-up" data-aos-duration="1000">
-        <span class="block text-xs uppercase tracking-[0.15em] text-white/80 font-bold mb-4">
-          Landscape Design & Construction
-        </span>
-        <h1 class="font-display text-white font-medium leading-[1.1] tracking-tight mb-6" style="font-size: clamp(3rem, 6vw, 5rem);">
-          Outdoor spaces designed for life outside.
-        </h1>
-        <p class="text-white/90 text-sm md:text-base leading-relaxed mb-10 max-w-lg font-medium">
-          We create beautiful, functional landscapes that bring people together and elevate everyday living.
-        </p>
-        <a href="https://wa.me/923104296015" class="inline-flex items-center gap-2 px-8 py-4 bg-[#BBD885] text-[#1E2B1F] rounded-full font-bold text-xs tracking-[0.05em] uppercase hover:bg-[#A5C768] transition-colors duration-300">
-          Book a Consultation
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
+      <div class="absolute inset-0 z-0">
+        <img src="assets/hero-bg.png" alt="Maplescape Landscape Design" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-[#1E2B1F]/70"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(187,216,133,0.25),transparent_60%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(74,103,65,0.5),transparent_60%)]"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/20 z-0"></div>
       </div>
-    </div>
 
-    <div class="absolute bottom-6 left-4 md:left-16 z-10 flex items-center gap-3">
-      <svg width="16" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-        <circle cx="12" cy="10" r="3"></circle>
-      </svg>
-      <span class="text-white text-[10px] font-medium tracking-wide">
-        Proudly serving Lahore<br/>and surrounding areas.
-      </span>
-    </div>
+      <div class="relative z-10 w-full max-w-[1400px] mx-auto px-4 md:px-16 pt-20 md:pt-0">
+        <div class="max-w-2xl" data-aos="fade-up" data-aos-duration="1000">
+          <span class="block text-xs uppercase tracking-[0.15em] text-white/80 font-bold mb-4">
+            Landscape Design & Construction
+          </span>
+          <h1 class="font-display text-white font-medium leading-[1.1] tracking-tight mb-6" style="font-size: clamp(3rem, 6vw, 5rem);">
+            Outdoor spaces designed for life outside.
+          </h1>
+          <p class="text-white/90 text-sm md:text-base leading-relaxed mb-10 max-w-lg font-medium">
+            We create beautiful, functional landscapes that bring people together and elevate everyday living.
+          </p>
+          <a href="https://wa.me/923104296015" class="inline-flex items-center gap-2 px-8 py-4 bg-[#BBD885] text-[#1E2B1F] rounded-full font-bold text-xs tracking-[0.05em] uppercase hover:bg-[#A5C768] transition-colors duration-300">
+            Book a Consultation
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-    <!-- Torn Edge SVG Divider -->
-    <div class="absolute bottom-0 left-0 w-full pointer-events-none z-30 translate-y-[2px] text-[#FDFBF7]">
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-12 md:h-20" fill="currentColor">
-        <path d="M0,120 C150,100 300,120 450,90 C600,60 750,100 900,80 C1050,60 1200,90 1200,90 L1200,120 L0,120 Z" opacity="0.5" />
-        <path d="M0,120 C200,90 400,110 600,70 C800,30 1000,90 1200,60 L1200,120 L0,120 Z" />
-      </svg>
-    </div>
-  </section>
+      <div class="absolute bottom-6 left-4 md:left-16 z-10 flex items-center gap-3">
+        <svg width="16" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span class="text-white text-[10px] font-medium tracking-wide">
+          Proudly serving Lahore<br/>and surrounding areas.
+        </span>
+      </div>
+
+      <div class="absolute bottom-0 left-0 w-full pointer-events-none z-30 translate-y-[2px] text-[#FDFBF7]">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-12 md:h-20" fill="currentColor">
+          <path d="M0,120 C150,100 300,120 450,90 C600,60 750,100 900,80 C1050,60 1200,90 1200,90 L1200,120 L0,120 Z" opacity="0.5" />
+          <path d="M0,120 C200,90 400,110 600,70 C800,30 1000,90 1200,60 L1200,120 L0,120 Z" />
+        </svg>
+      </div>
+    </section>
 
     <!-- [SEMANTIC TAG: <section>] - Stats & Trust Indicators Section -->
     <section class="w-full bg-[#FDFBF7] border-b border-[#1E2B1F]/10">
-    <div class="max-w-[1400px] mx-auto px-4 md:px-16 py-6 md:py-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-[#1E2B1F]/10" data-aos="fade-up">
-        
-        <div class="flex flex-col items-center justify-center text-center pt-8 md:pt-0">
-          <svg class="mb-3 text-[#BBD885]" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-          </svg>
-          <h3 class="font-display text-3xl font-medium text-[#1E2B1F] mb-1">15+</h3>
-          <p class="text-[10px] text-[#1E2B1F]/50 uppercase tracking-widest font-bold">Years of Experience</p>
-        </div>
-
-        <div class="flex flex-col items-center justify-center text-center pt-8 md:pt-0">
-          <svg class="mb-3 text-[#BBD885]" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-          </svg>
-          <h3 class="font-display text-3xl font-medium text-[#1E2B1F] mb-1">200+</h3>
-          <p class="text-[10px] text-[#1E2B1F]/50 uppercase tracking-widest font-bold">Projects Completed</p>
-        </div>
-
-        <div class="flex flex-col items-center justify-center text-center pt-8 md:pt-0">
-          <svg class="mb-3 text-[#BBD885]" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-          </svg>
-          <h3 class="font-display text-3xl font-medium text-[#1E2B1F] mb-1">100%</h3>
-          <p class="text-[10px] text-[#1E2B1F]/50 uppercase tracking-widest font-bold">Client Satisfaction</p>
-        </div>
-
-        <div class="flex flex-col items-center justify-center text-center pt-8 md:pt-0">
-          <svg class="mb-3 text-[#BBD885]" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          </svg>
-          <h3 class="font-sans text-sm font-medium text-[#1E2B1F] mb-1 mt-2 tracking-wide">Licensed & Insured</h3>
-          <p class="text-[10px] text-[#1E2B1F]/50 uppercase tracking-widest font-bold">Landscape Professionals</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Surface Wrapper (Gradient + Leaves) -->
-  <div class="relative w-full bg-gradient-to-b from-[#FDFBF7] via-[#E2F0C8] to-[#BBD885] overflow-hidden">
-    
-    <!-- Decorative Side Leaves -->
-    <div class="absolute top-[10%] left-0 opacity-20 pointer-events-none">
-      <svg width="120" height="200" viewBox="0 0 100 200" fill="#9CBF62">
-        <path d="M0 50 C40 40 80 80 50 150 C20 120 0 90 0 50 Z" />
-      </svg>
-    </div>
-    <div class="absolute top-[40%] right-0 opacity-20 pointer-events-none transform scale-x-[-1]">
-      <svg width="150" height="250" viewBox="0 0 100 200" fill="#8EAD57">
-        <path d="M0 50 C40 40 80 80 50 150 C20 120 0 90 0 50 Z" />
-      </svg>
-    </div>
-    <div class="absolute bottom-[20%] left-0 opacity-15 pointer-events-none">
-      <svg width="100" height="150" viewBox="0 0 100 200" fill="#759344">
-        <path d="M0 50 C40 40 80 80 50 150 C20 120 0 90 0 50 Z" />
-      </svg>
-    </div>
-
-    <!-- Content Container -->
-    <div class="relative z-10">
-
-    <!-- [SEMANTIC TAG: <section>] - About Us Section (#about) -->
-    <section id="about" class="py-16 md:py-24 bg-transparent">
-      <div class="max-w-[1400px] mx-auto px-4 md:px-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-        
-        <!-- [SEMANTIC TAG: <figure> & <figcaption>] - Self-contained Media Image with Caption -->
-        <figure class="w-full lg:w-[35%] aspect-[3/4] rounded-[30px] overflow-hidden shadow-lg m-0" data-aos="fade-right">
-          <img src="assets/images/generated/about.png" alt="About Maplescape" class="w-full h-full object-cover" />
-          <figcaption class="sr-only">Maplescape Landscaping beautiful garden design</figcaption>
-        </figure>
-
-      <div class="w-full lg:w-[35%]" data-aos="fade-up">
-        <span class="text-xs uppercase tracking-widest font-bold text-[#BBD885] mb-2 block">About Maplescape</span>
-        <h2 class="font-display font-medium text-4xl md:text-5xl leading-tight mb-6">Built on passion.<br>Focused on you.</h2>
-        <p class="text-[#1E2B1F]/70 text-sm leading-relaxed mb-4">Maplescape Landscaping is a locally owned and operated business with a passion for creating outdoor spaces that enhance the way you live.</p>
-        <p class="text-[#1E2B1F]/70 text-sm leading-relaxed">We believe in honest communication, quality craftsmanship and attention to detail — on every project, big or small.</p>
-      </div>
-
-      <div class="w-full lg:w-[30%] flex flex-col gap-8" data-aos="fade-left">
-        <div class="flex gap-4">
-          <div class="w-10 h-10 rounded-full border border-[#162818]/10 flex items-center justify-center flex-shrink-0 text-[#162818]/70">📍</div>
-          <div>
-            <h4 class="font-bold text-sm mb-1 mt-1">Local & Reliable</h4>
-            <p class="text-[#162818]/60 text-xs leading-relaxed">We're based locally and understand the unique landscapes.</p>
+      <div class="max-w-[1400px] mx-auto px-4 md:px-16 py-6 md:py-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-[#1E2B1F]/10" data-aos="fade-up">
+          
+          <div class="flex flex-col items-center justify-center text-center pt-8 md:pt-0">
+            <svg class="mb-3 text-[#BBD885]" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+            <h3 class="font-display text-3xl font-medium text-[#1E2B1F] mb-1">15+</h3>
+            <p class="text-[10px] text-[#1E2B1F]/50 uppercase tracking-widest font-bold">Years of Experience</p>
           </div>
-        </div>
-        <div class="flex gap-4">
-          <div class="w-10 h-10 rounded-full border border-[#162818]/10 flex items-center justify-center flex-shrink-0 text-[#162818]/70">🌱</div>
-          <div>
-            <h4 class="font-bold text-sm mb-1 mt-1">Sustainable Approach</h4>
-            <p class="text-[#162818]/60 text-xs leading-relaxed">We use eco-friendly practices and materials.</p>
+
+          <div class="flex flex-col items-center justify-center text-center pt-8 md:pt-0">
+            <svg class="mb-3 text-[#BBD885]" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            <h3 class="font-display text-3xl font-medium text-[#1E2B1F] mb-1">200+</h3>
+            <p class="text-[10px] text-[#1E2B1F]/50 uppercase tracking-widest font-bold">Projects Completed</p>
           </div>
+
+          <div class="flex flex-col items-center justify-center text-center pt-8 md:pt-0">
+            <svg class="mb-3 text-[#BBD885]" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <h3 class="font-display text-3xl font-medium text-[#1E2B1F] mb-1">100%</h3>
+            <p class="text-[10px] text-[#1E2B1F]/50 uppercase tracking-widest font-bold">Client Satisfaction</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center text-center pt-8 md:pt-0">
+            <svg class="mb-3 text-[#BBD885]" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <h3 class="font-sans text-sm font-medium text-[#1E2B1F] mb-1 mt-2 tracking-wide">Licensed & Insured</h3>
+            <p class="text-[10px] text-[#1E2B1F]/50 uppercase tracking-widest font-bold">Landscape Professionals</p>
+          </div>
+
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-    <!-- [SEMANTIC TAG: <section>] - Services Section (#services) -->
-    <section id="services" class="py-16 md:py-24 bg-transparent">
-    <div class="max-w-[1400px] mx-auto px-4 md:px-16">
-      <div class="mb-16" data-aos="fade-up">
-        <span class="text-xs uppercase tracking-widest font-bold text-[#BBD885] mb-2 block">Our Services</span>
-        <h2 class="font-display font-medium text-4xl md:text-5xl tracking-tight mb-4">Comprehensive landscape solutions.</h2>
-        <p class="text-[#1E2B1F]/70 text-sm max-w-xl">From initial design concepts to the final planted shrub, our team provides end-to-end services to transform your property.</p>
+    <div class="relative w-full bg-gradient-to-b from-[#FDFBF7] via-[#E2F0C8] to-[#BBD885] overflow-hidden">
+      
+      <div class="absolute top-[10%] left-0 opacity-20 pointer-events-none">
+        <svg width="120" height="200" viewBox="0 0 100 200" fill="#9CBF62">
+          <path d="M0 50 C40 40 80 80 50 150 C20 120 0 90 0 50 Z" />
+        </svg>
+      </div>
+      <div class="absolute top-[40%] right-0 opacity-20 pointer-events-none transform scale-x-[-1]">
+        <svg width="150" height="250" viewBox="0 0 100 200" fill="#8EAD57">
+          <path d="M0 50 C40 40 80 80 50 150 C20 120 0 90 0 50 Z" />
+        </svg>
+      </div>
+      <div class="absolute bottom-[20%] left-0 opacity-15 pointer-events-none">
+        <svg width="100" height="150" viewBox="0 0 100 200" fill="#759344">
+          <path d="M0 50 C40 40 80 80 50 150 C20 120 0 90 0 50 Z" />
+        </svg>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Service 1 -->
-        <div class="group flex flex-col" data-aos="fade-up" data-aos-delay="0">
-          <div class="relative w-full aspect-[4/3] mb-10">
-            <div class="absolute inset-0 overflow-hidden rounded-[30px]">
-              <img src="assets/images/portfolio-real-1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Design" />
+      <div class="relative z-10">
+
+        <!-- [SEMANTIC TAG: <section>] - About Us Section (#about) -->
+        <section id="about" class="py-16 md:py-24 bg-transparent">
+          <div class="max-w-[1400px] mx-auto px-4 md:px-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            
+            <!-- [SEMANTIC TAG: <figure> & <figcaption>] - Self-contained Media Image with Caption -->
+            <figure class="w-full lg:w-[35%] aspect-[3/4] rounded-[30px] overflow-hidden shadow-lg m-0" data-aos="fade-right">
+              <img src="assets/images/generated/about.png" alt="About Maplescape" class="w-full h-full object-cover" />
+              <figcaption class="sr-only">Maplescape Landscaping beautiful garden design</figcaption>
+            </figure>
+
+            <div class="w-full lg:w-[35%]" data-aos="fade-up">
+              <span class="text-xs uppercase tracking-widest font-bold text-[#BBD885] mb-2 block">About Maplescape</span>
+              <h2 class="font-display font-medium text-4xl md:text-5xl leading-tight mb-6">Built on passion.<br>Focused on you.</h2>
+              <p class="text-[#1E2B1F]/70 text-sm leading-relaxed mb-4">Maplescape Landscaping is a locally owned and operated business with a passion for creating outdoor spaces that enhance the way you live.</p>
+              <p class="text-[#1E2B1F]/70 text-sm leading-relaxed">We believe in honest communication, quality craftsmanship and attention to detail — on every project, big or small.</p>
             </div>
-            <div class="absolute -bottom-5 left-6 w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#132015] shadow-md z-10">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 20h9"></path>
-                <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-              </svg>
-            </div>
-          </div>
-          <div class="flex flex-col flex-grow">
-            <h3 class="font-display font-semibold text-2xl mb-4">Landscape Design</h3>
-            <p class="text-[#1E2B1F]/70 text-sm mb-8 flex-grow">Custom designs that combine beauty, functionality and sustainability.</p>
-            <a href="https://wa.me/923104296015" class="inline-flex items-center text-[#132015] font-bold text-xs tracking-wider uppercase group/link mt-auto">
-              Learn More
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-2 transform group-hover/link:translate-x-1 transition-transform">
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <!-- Service 2 -->
-        <div class="group flex flex-col" data-aos="fade-up" data-aos-delay="100">
-          <div class="relative w-full aspect-[4/3] mb-10">
-            <div class="absolute inset-0 overflow-hidden rounded-[30px]">
-              <img src="assets/images/portfolio-real-2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Construction" />
-            </div>
-            <div class="absolute -bottom-5 left-6 w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#132015] shadow-md z-10">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="3" y1="9" x2="21" y2="9"></line>
-                <line x1="9" y1="21" x2="9" y2="9"></line>
-              </svg>
+
+            <div class="w-full lg:w-[30%] flex flex-col gap-8" data-aos="fade-left">
+              <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full border border-[#162818]/10 flex items-center justify-center flex-shrink-0 text-[#162818]/70">📍</div>
+                <div>
+                  <h4 class="font-bold text-sm mb-1 mt-1">Local & Reliable</h4>
+                  <p class="text-[#162818]/60 text-xs leading-relaxed">We're based locally and understand the unique landscapes.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full border border-[#162818]/10 flex items-center justify-center flex-shrink-0 text-[#162818]/70">🌱</div>
+                <div>
+                  <h4 class="font-bold text-sm mb-1 mt-1">Sustainable Approach</h4>
+                  <p class="text-[#162818]/60 text-xs leading-relaxed">We use eco-friendly practices and materials.</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="flex flex-col flex-grow">
-            <h3 class="font-display font-semibold text-2xl mb-4">Construction</h3>
-            <p class="text-[#1E2B1F]/70 text-sm mb-8 flex-grow">Expert craftsmanship to bring your landscape design to life with precision.</p>
-            <a href="https://wa.me/923104296015" class="inline-flex items-center text-[#132015] font-bold text-xs tracking-wider uppercase group/link mt-auto">
-              Learn More
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-2 transform group-hover/link:translate-x-1 transition-transform">
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <!-- Service 3 -->
-        <div class="group flex flex-col" data-aos="fade-up" data-aos-delay="200">
-          <div class="relative w-full aspect-[4/3] mb-10">
-            <div class="absolute inset-0 overflow-hidden rounded-[30px]">
-              <img src="assets/images/portfolio-real-3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Decking" />
+        </section>
+
+        <!-- [SEMANTIC TAG: <section>] - Services Section (#services) -->
+        <section id="services" class="py-16 md:py-24 bg-transparent">
+          <div class="max-w-[1400px] mx-auto px-4 md:px-16">
+            <div class="mb-16" data-aos="fade-up">
+              <span class="text-xs uppercase tracking-widest font-bold text-[#BBD885] mb-2 block">Our Services</span>
+              <h2 class="font-display font-medium text-4xl md:text-5xl tracking-tight mb-4">Comprehensive landscape solutions.</h2>
+              <p class="text-[#1E2B1F]/70 text-sm max-w-xl">From initial design concepts to the final planted shrub, our team provides end-to-end services to transform your property.</p>
             </div>
-            <div class="absolute -bottom-5 left-6 w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#132015] shadow-md z-10">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <line x1="3" y1="8" x2="21" y2="8"></line>
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="16" x2="21" y2="16"></line>
-                <line x1="7" y1="6" x2="7" y2="18"></line>
-                <line x1="17" y1="6" x2="17" y2="18"></line>
-              </svg>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div class="group flex flex-col" data-aos="fade-up" data-aos-delay="0">
+                <div class="relative w-full aspect-[4/3] mb-10">
+                  <div class="absolute inset-0 overflow-hidden rounded-[30px]">
+                    <img src="assets/images/portfolio-real-1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Design" />
+                  </div>
+                  <div class="absolute -bottom-5 left-6 w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#132015] shadow-md z-10">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M12 20h9"></path>
+                      <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-grow">
+                  <h3 class="font-display font-semibold text-2xl mb-4">Landscape Design</h3>
+                  <p class="text-[#1E2B1F]/70 text-sm mb-8 flex-grow">Custom designs that combine beauty, functionality and sustainability.</p>
+                  <a href="https://wa.me/923104296015" class="inline-flex items-center text-[#132015] font-bold text-xs tracking-wider uppercase group/link mt-auto">
+                    Learn More
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-2 transform group-hover/link:translate-x-1 transition-transform">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="group flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                <div class="relative w-full aspect-[4/3] mb-10">
+                  <div class="absolute inset-0 overflow-hidden rounded-[30px]">
+                    <img src="assets/images/portfolio-real-2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Construction" />
+                  </div>
+                  <div class="absolute -bottom-5 left-6 w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#132015] shadow-md z-10">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="3" y1="9" x2="21" y2="9"></line>
+                      <line x1="9" y1="21" x2="9" y2="9"></line>
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-grow">
+                  <h3 class="font-display font-semibold text-2xl mb-4">Construction</h3>
+                  <p class="text-[#1E2B1F]/70 text-sm mb-8 flex-grow">Expert craftsmanship to bring your landscape design to life with precision.</p>
+                  <a href="https://wa.me/923104296015" class="inline-flex items-center text-[#132015] font-bold text-xs tracking-wider uppercase group/link mt-auto">
+                    Learn More
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-2 transform group-hover/link:translate-x-1 transition-transform">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="group flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                <div class="relative w-full aspect-[4/3] mb-10">
+                  <div class="absolute inset-0 overflow-hidden rounded-[30px]">
+                    <img src="assets/images/portfolio-real-3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Decking" />
+                  </div>
+                  <div class="absolute -bottom-5 left-6 w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#132015] shadow-md z-10">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <line x1="3" y1="8" x2="21" y2="8"></line>
+                      <line x1="3" y1="12" x2="21" y2="12"></line>
+                      <line x1="3" y1="16" x2="21" y2="16"></line>
+                      <line x1="7" y1="6" x2="7" y2="18"></line>
+                      <line x1="17" y1="6" x2="17" y2="18"></line>
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-grow">
+                  <h3 class="font-display font-semibold text-2xl mb-4">Decking</h3>
+                  <p class="text-[#1E2B1F]/70 text-sm mb-8 flex-grow">Custom-built decks that create a durable, beautiful space to relax.</p>
+                  <a href="https://wa.me/923104296015" class="inline-flex items-center text-[#132015] font-bold text-xs tracking-wider uppercase group/link mt-auto">
+                    Learn More
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-2 transform group-hover/link:translate-x-1 transition-transform">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="group flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                <div class="relative w-full aspect-[4/3] mb-10">
+                  <div class="absolute inset-0 overflow-hidden rounded-[30px]">
+                    <img src="assets/images/service-maintenance.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Maintenance" />
+                  </div>
+                  <div class="absolute -bottom-5 left-6 w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#132015] shadow-md z-10">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M12 2v20"></path>
+                      <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex flex-col flex-grow">
+                  <h3 class="font-display font-semibold text-2xl mb-4">Maintenance</h3>
+                  <p class="text-[#1E2B1F]/70 text-sm mb-8 flex-grow">Keep your landscape healthy and looking its best all year round.</p>
+                  <a href="https://wa.me/923104296015" class="inline-flex items-center text-[#132015] font-bold text-xs tracking-wider uppercase group/link mt-auto">
+                    Learn More
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-2 transform group-hover/link:translate-x-1 transition-transform">
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="flex flex-col flex-grow">
-            <h3 class="font-display font-semibold text-2xl mb-4">Decking</h3>
-            <p class="text-[#1E2B1F]/70 text-sm mb-8 flex-grow">Custom-built decks that create a durable, beautiful space to relax.</p>
-            <a href="https://wa.me/923104296015" class="inline-flex items-center text-[#132015] font-bold text-xs tracking-wider uppercase group/link mt-auto">
-              Learn More
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-2 transform group-hover/link:translate-x-1 transition-transform">
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <!-- Service 4 -->
-        <div class="group flex flex-col" data-aos="fade-up" data-aos-delay="300">
-          <div class="relative w-full aspect-[4/3] mb-10">
-            <div class="absolute inset-0 overflow-hidden rounded-[30px]">
-              <img src="assets/images/service-maintenance.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Maintenance" />
-            </div>
-            <div class="absolute -bottom-5 left-6 w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#132015] shadow-md z-10">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 2v20"></path>
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-              </svg>
-            </div>
-          </div>
-          <div class="flex flex-col flex-grow">
-            <h3 class="font-display font-semibold text-2xl mb-4">Maintenance</h3>
-            <p class="text-[#1E2B1F]/70 text-sm mb-8 flex-grow">Keep your landscape healthy and looking its best all year round.</p>
-            <a href="https://wa.me/14378552790" class="inline-flex items-center text-[#132015] font-bold text-xs tracking-wider uppercase group/link mt-auto">
-              Learn More
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-2 transform group-hover/link:translate-x-1 transition-transform">
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
+        </section>
+
+      </div>
+
+      <div class="absolute bottom-0 left-0 w-full z-20 translate-y-[1px]">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" class="w-full h-12 md:h-24" fill="#FDFBF7">
+          <path d="M0,120 L1440,120 L1440,70 C1080,130 720,10 360,70 C180,100 90,90 0,70 Z" />
+        </svg>
       </div>
     </div>
-  </section>
 
-    </div>
-
-    <!-- Smooth Wave Divider at the very bottom -->
-    <div class="absolute bottom-0 left-0 w-full z-20 translate-y-[1px]">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" class="w-full h-12 md:h-24" fill="#FDFBF7">
-        <path d="M0,120 L1440,120 L1440,70 C1080,130 720,10 360,70 C180,100 90,90 0,70 Z" />
-      </svg>
-    </div>
   <!-- [END OF SEMANTIC TAG: </main>] -->
   </main>
 
@@ -383,7 +368,6 @@
     </div>
   </footer>
 
-  <!-- AOS Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -391,7 +375,6 @@
       offset: 100,
     });
 
-    // Mobile Hamburger Menu Toggle
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const menuIcon = document.getElementById('menu-icon');
@@ -406,7 +389,6 @@
         }
       });
 
-      // Close menu when clicking any mobile link
       mobileMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
           mobileMenu.classList.add('hidden');
